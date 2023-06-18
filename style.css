@@ -107,3 +107,42 @@ button.active {
   border-radius: 40%;
   border: none;
 }
+
+@media screen and (max-width: 480px) {
+  .container {    
+    display: flex;
+  }
+  .calculator{
+    display: grid;
+    height: 100%;
+    width: 100%;
+  }
+  #display {
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto auto;
+    font-size: 50px;       
+  }
+  .keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+    padding: 1px;    
+  }
+  
+  .button {
+    width: 85%;
+    height: 85%;
+    padding: 25px;
+    border-radius: 50%;
+    font-size: 20px;
+
+  }
+
+  .button.double {
+    grid-column: span 2;
+    border-radius: 40%;
+    border: none;
+  }
+}
+
